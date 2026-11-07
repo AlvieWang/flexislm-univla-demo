@@ -1,0 +1,19 @@
+{
+  "kind": "closed_loop_smoke_not_benchmark",
+  "task": "open the middle drawer of the cabinet",
+  "training_step": 300,
+  "checkpoint": "expanded300/checkpoint.pt",
+  "policy": "joint",
+  "instruction_modality": "waveform",
+  "init_index": 0,
+  "seed": 42,
+  "fast_decode_policy": "upstream",
+  "initial_instruction_only": true,
+  "success": true,
+  "suite": "libero_goal",
+  "task_index": 0,
+  "control_hz": 20.0,
+  "initial_simulation_seconds": 0.5000000000000003,
+  "status": "completed",
+  "action_chunks": 13
+}
