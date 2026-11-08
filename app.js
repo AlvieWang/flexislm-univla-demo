@@ -4,3 +4,21 @@ function renderMedia(mode){playing=mode==='play';image.src=`assets/${active}${pl
 function selectCase(key){active=key;const item=cases[key];document.getElementById('case-title').textContent=item.title;document.getElementById('task-number').textContent=item.task;document.getElementById('case-description').textContent=item.description;document.getElementById('instruction').textContent=item.instruction;document.getElementById('chunks').textContent=item.chunks;document.getElementById('report-link').href=`assets/${key}-report.json`;document.getElementById('case-panel').setAttribute('aria-labelledby',`tab-${key}`);document.querySelectorAll('[role=tab]').forEach(t=>{t.setAttribute('aria-selected',String(t.dataset.case===key));t.tabIndex=t.dataset.case===key?0:-1});renderMedia(matchMedia('(prefers-reduced-motion: reduce)').matches?'start':'play');}
 document.querySelectorAll('[role=tab]').forEach(t=>{t.addEventListener('click',()=>selectCase(t.dataset.case));t.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();const key=e.key==='Home'?'drawer':e.key==='End'?'bowl':active==='drawer'?'bowl':'drawer';selectCase(key);document.getElementById(`tab-${key}`).focus();}})});
 play.addEventListener('click',()=>renderMedia(playing?'start':'play'));document.getElementById('replay').addEventListener('click',()=>{image.src=`assets/${active}-start.png`;requestAnimationFrame(()=>requestAnimationFrame(()=>renderMedia('play')))});document.getElementById('final-frame').addEventListener('click',()=>renderMedia('final'));selectCase('drawer');
+
+// All numbers are derived from the downloaded GPU3 evidence snapshot.
+const evidence=window.experimentEvidence;
+const routeLabels={oracle_text:'A · 正确文本 + UniVLA',asr_text:'B · ASR + UniVLA',joint_native:'C · FlexiSLM 联合模型'};
+const audioLabels={joint_matched:'正常语音 · matched',joint_silence:'静音 · silence',joint_mismatched:'错配 · mismatched',joint_reversed:'倒放 · reversed'};
+function percent(row){return (100*row.task_successes/row.planned).toFixed(1);}
+function renderResults(){
+ const stratum=document.getElementById('result-stratum').value;
+ const rows=stratum==='all'?evidence.groups:evidence.stratified_groups[stratum];
+ document.getElementById('main-results').innerHTML=Object.entries(routeLabels).map(([key,label])=>{const r=rows[key];return `<article class="score-card"><h3>${label}</h3><div class="score-value">${percent(r)}<small>%</small></div><div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:${percent(r)}%"></div></div><div class="score-meta">${r.task_successes} / ${r.planned} 次成功<br>${r.completed} 次正常完成 · ${r.runtime_errors} 次技术错误</div></article>`}).join('');
+ document.getElementById('audio-results').innerHTML=Object.entries(audioLabels).map(([key,label])=>{const r=rows[key];return `<article class="audio-card"><h4>${label}</h4><strong>${percent(r)}%</strong><div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:${percent(r)}%"></div></div><small>${r.task_successes} / ${r.planned} 成功 · ${r.runtime_errors} 次技术错误</small></article>`}).join('');
+ const notes={all:'全部 10 个任务，每条主路线 500 次。分母包含技术错误；补跑结果不并入。',joint_seen:'task0 与 task3，共 100 次 / 主路线。这两个任务参与了联合适配，不代表整个任务集。',joint_unseen:'其余 8 个任务，共 400 次 / 主路线。它们未参与联合适配，但不代表 UniVLA 预训练从未见过。'};
+ document.getElementById('stratum-note').textContent=notes[stratum];
+}
+document.getElementById('result-stratum').addEventListener('change',renderResults);
+const taskNames=['打开中间抽屉','将碗放在炉子上','将酒瓶放在柜顶','打开上层抽屉并放入碗','将碗放在柜顶','将盘子推至炉子前方','将奶油奶酪放进碗里','打开炉子','将碗放在盘子上','将酒瓶放在架子上'];
+document.getElementById('task-rows').innerHTML=Object.entries(evidence.by_task).map(([id,t])=>`<tr><th scope="row">${String(id).padStart(2,'0')} · ${taskNames[Number(id)]}</th><td>${t.joint_training_seen?'已适配':'未适配'}</td>${Object.keys(routeLabels).map(k=>`<td>${t.groups[k].task_successes}/${t.groups[k].planned}${t.groups[k].runtime_errors?' *':''}</td>`).join('')}</tr>`).join('')+'<tr><td colspan="5">* 该组包含技术错误；成功次数的分母仍为计划次数。</td></tr>';
+renderResults();

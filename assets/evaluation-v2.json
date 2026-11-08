@@ -1,0 +1,1733 @@
+{
+  "verified_on": "2026-11-07",
+  "summary_sha256": "9c909833ff3767b5a55d7291eb03ef38de8c8b7662b18f869837b39d10b12ed2",
+  "plan_sha256": "16afe0b21d42ea4663e1fac82cb49699668b982e6b90200b50e638817a10e0e9",
+  "groups": {
+    "joint_native": {
+      "planned": 500,
+      "reported": 500,
+      "pending": 0,
+      "completed": 500,
+      "task_successes": 89,
+      "completed_without_success": 411,
+      "runtime_errors": 0,
+      "invalid_initial_states": 0,
+      "success_fraction_of_planned": 0.178,
+      "interpretation": "Fixed-suite initial-instruction study; not full ELLSA protocol",
+      "macro_success_rate": 0.17800000000000002
+    },
+    "joint_matched": {
+      "planned": 100,
+      "reported": 100,
+      "pending": 0,
+      "completed": 99,
+      "task_successes": 16,
+      "completed_without_success": 83,
+      "runtime_errors": 1,
+      "invalid_initial_states": 0,
+      "success_fraction_of_planned": 0.16,
+      "interpretation": "Fixed-suite initial-instruction study; not full ELLSA protocol",
+      "macro_success_rate": 0.16
+    },
+    "joint_silence": {
+      "planned": 100,
+      "reported": 100,
+      "pending": 0,
+      "completed": 100,
+      "task_successes": 10,
+      "completed_without_success": 90,
+      "runtime_errors": 0,
+      "invalid_initial_states": 0,
+      "success_fraction_of_planned": 0.1,
+      "interpretation": "Fixed-suite initial-instruction study; not full ELLSA protocol",
+      "macro_success_rate": 0.1
+    },
+    "joint_mismatched": {
+      "planned": 100,
+      "reported": 100,
+      "pending": 0,
+      "completed": 100,
+      "task_successes": 5,
+      "completed_without_success": 95,
+      "runtime_errors": 0,
+      "invalid_initial_states": 0,
+      "success_fraction_of_planned": 0.05,
+      "interpretation": "Fixed-suite initial-instruction study; not full ELLSA protocol",
+      "macro_success_rate": 0.05
+    },
+    "joint_reversed": {
+      "planned": 100,
+      "reported": 100,
+      "pending": 0,
+      "completed": 100,
+      "task_successes": 7,
+      "completed_without_success": 93,
+      "runtime_errors": 0,
+      "invalid_initial_states": 0,
+      "success_fraction_of_planned": 0.07,
+      "interpretation": "Fixed-suite initial-instruction study; not full ELLSA protocol",
+      "macro_success_rate": 0.06999999999999999
+    },
+    "oracle_text": {
+      "planned": 500,
+      "reported": 500,
+      "pending": 0,
+      "completed": 499,
+      "task_successes": 452,
+      "completed_without_success": 47,
+      "runtime_errors": 1,
+      "invalid_initial_states": 0,
+      "success_fraction_of_planned": 0.904,
+      "interpretation": "Fixed-suite initial-instruction study; not full ELLSA protocol",
+      "macro_success_rate": 0.9039999999999999
+    },
+    "asr_text": {
+      "planned": 500,
+      "reported": 500,
+      "pending": 0,
+      "completed": 498,
+      "task_successes": 436,
+      "completed_without_success": 62,
+      "runtime_errors": 2,
+      "invalid_initial_states": 0,
+      "success_fraction_of_planned": 0.872,
+      "interpretation": "Fixed-suite initial-instruction study; not full ELLSA protocol",
+      "macro_success_rate": 0.8719999999999999
+    }
+  },
+  "by_task": {
+    "0": {
+      "task": "open the middle drawer of the cabinet",
+      "joint_training_seen": true,
+      "groups": {
+        "joint_native": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 45,
+          "completed_without_success": 5,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.9,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_matched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 9,
+          "completed_without_success": 1,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.9,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_silence": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 2,
+          "completed_without_success": 8,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.2,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_mismatched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 1,
+          "completed_without_success": 9,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.1,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_reversed": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 4,
+          "completed_without_success": 6,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.4,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "oracle_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 43,
+          "completed_without_success": 7,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.86,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "asr_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 46,
+          "completed_without_success": 4,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.92,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        }
+      }
+    },
+    "1": {
+      "task": "put the bowl on the stove",
+      "joint_training_seen": false,
+      "groups": {
+        "joint_native": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 5,
+          "completed_without_success": 45,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.1,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_matched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 1,
+          "completed_without_success": 9,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.1,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_silence": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 1,
+          "completed_without_success": 9,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.1,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_mismatched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_reversed": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "oracle_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 48,
+          "completed_without_success": 2,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.96,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "asr_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 46,
+          "completed_without_success": 4,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.92,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        }
+      }
+    },
+    "2": {
+      "task": "put the wine bottle on top of the cabinet",
+      "joint_training_seen": false,
+      "groups": {
+        "joint_native": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 0,
+          "completed_without_success": 50,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_matched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_silence": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_mismatched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_reversed": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "oracle_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 48,
+          "completed_without_success": 2,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.96,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "asr_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 49,
+          "completed_without_success": 1,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.98,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        }
+      }
+    },
+    "3": {
+      "task": "open the top drawer and put the bowl inside",
+      "joint_training_seen": true,
+      "groups": {
+        "joint_native": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 34,
+          "completed_without_success": 16,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.68,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_matched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 5,
+          "completed_without_success": 5,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.5,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_silence": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 4,
+          "completed_without_success": 6,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.4,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_mismatched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 3,
+          "completed_without_success": 7,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.3,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_reversed": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 1,
+          "completed_without_success": 9,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.1,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "oracle_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 39,
+          "completed_without_success": 11,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.78,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "asr_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 49,
+          "task_successes": 41,
+          "completed_without_success": 8,
+          "runtime_errors": 1,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.82,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        }
+      }
+    },
+    "4": {
+      "task": "put the bowl on top of the cabinet",
+      "joint_training_seen": false,
+      "groups": {
+        "joint_native": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 2,
+          "completed_without_success": 48,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.04,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_matched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_silence": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 2,
+          "completed_without_success": 8,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.2,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_mismatched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_reversed": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "oracle_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 49,
+          "completed_without_success": 1,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.98,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "asr_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 49,
+          "task_successes": 47,
+          "completed_without_success": 2,
+          "runtime_errors": 1,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.94,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        }
+      }
+    },
+    "5": {
+      "task": "push the plate to the front of the stove",
+      "joint_training_seen": false,
+      "groups": {
+        "joint_native": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 0,
+          "completed_without_success": 50,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_matched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_silence": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_mismatched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_reversed": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "oracle_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 43,
+          "completed_without_success": 7,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.86,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "asr_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 48,
+          "completed_without_success": 2,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.96,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        }
+      }
+    },
+    "6": {
+      "task": "put the cream cheese in the bowl",
+      "joint_training_seen": false,
+      "groups": {
+        "joint_native": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 1,
+          "completed_without_success": 49,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.02,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_matched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_silence": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_mismatched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_reversed": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "oracle_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 43,
+          "completed_without_success": 7,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.86,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "asr_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 21,
+          "completed_without_success": 29,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.42,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        }
+      }
+    },
+    "7": {
+      "task": "turn on the stove",
+      "joint_training_seen": false,
+      "groups": {
+        "joint_native": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 1,
+          "completed_without_success": 49,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.02,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_matched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 1,
+          "completed_without_success": 9,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.1,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_silence": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 1,
+          "completed_without_success": 9,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.1,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_mismatched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 1,
+          "completed_without_success": 9,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.1,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_reversed": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 1,
+          "completed_without_success": 9,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.1,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "oracle_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 50,
+          "completed_without_success": 0,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 1.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "asr_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 47,
+          "completed_without_success": 3,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.94,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        }
+      }
+    },
+    "8": {
+      "task": "put the bowl on the plate",
+      "joint_training_seen": false,
+      "groups": {
+        "joint_native": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 1,
+          "completed_without_success": 49,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.02,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_matched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_silence": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_mismatched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_reversed": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 1,
+          "completed_without_success": 9,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.1,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "oracle_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 50,
+          "completed_without_success": 0,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 1.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "asr_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 48,
+          "completed_without_success": 2,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.96,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        }
+      }
+    },
+    "9": {
+      "task": "put the wine bottle on the rack",
+      "joint_training_seen": false,
+      "groups": {
+        "joint_native": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 0,
+          "completed_without_success": 50,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_matched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 9,
+          "task_successes": 0,
+          "completed_without_success": 9,
+          "runtime_errors": 1,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_silence": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_mismatched": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "joint_reversed": {
+          "planned": 10,
+          "reported": 10,
+          "pending": 0,
+          "completed": 10,
+          "task_successes": 0,
+          "completed_without_success": 10,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.0,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "oracle_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 49,
+          "task_successes": 39,
+          "completed_without_success": 10,
+          "runtime_errors": 1,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.78,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        },
+        "asr_text": {
+          "planned": 50,
+          "reported": 50,
+          "pending": 0,
+          "completed": 50,
+          "task_successes": 43,
+          "completed_without_success": 7,
+          "runtime_errors": 0,
+          "invalid_initial_states": 0,
+          "success_fraction_of_planned": 0.86,
+          "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+        }
+      }
+    }
+  },
+  "stratified_groups": {
+    "joint_seen": {
+      "joint_native": {
+        "planned": 100,
+        "reported": 100,
+        "pending": 0,
+        "completed": 100,
+        "task_successes": 79,
+        "completed_without_success": 21,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.79,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_matched": {
+        "planned": 20,
+        "reported": 20,
+        "pending": 0,
+        "completed": 20,
+        "task_successes": 14,
+        "completed_without_success": 6,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.7,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_silence": {
+        "planned": 20,
+        "reported": 20,
+        "pending": 0,
+        "completed": 20,
+        "task_successes": 6,
+        "completed_without_success": 14,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.3,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_mismatched": {
+        "planned": 20,
+        "reported": 20,
+        "pending": 0,
+        "completed": 20,
+        "task_successes": 4,
+        "completed_without_success": 16,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.2,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_reversed": {
+        "planned": 20,
+        "reported": 20,
+        "pending": 0,
+        "completed": 20,
+        "task_successes": 5,
+        "completed_without_success": 15,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.25,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "oracle_text": {
+        "planned": 100,
+        "reported": 100,
+        "pending": 0,
+        "completed": 100,
+        "task_successes": 82,
+        "completed_without_success": 18,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.82,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "asr_text": {
+        "planned": 100,
+        "reported": 100,
+        "pending": 0,
+        "completed": 99,
+        "task_successes": 87,
+        "completed_without_success": 12,
+        "runtime_errors": 1,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.87,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      }
+    },
+    "joint_unseen": {
+      "joint_native": {
+        "planned": 400,
+        "reported": 400,
+        "pending": 0,
+        "completed": 400,
+        "task_successes": 10,
+        "completed_without_success": 390,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.025,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_matched": {
+        "planned": 80,
+        "reported": 80,
+        "pending": 0,
+        "completed": 79,
+        "task_successes": 2,
+        "completed_without_success": 77,
+        "runtime_errors": 1,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.025,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_silence": {
+        "planned": 80,
+        "reported": 80,
+        "pending": 0,
+        "completed": 80,
+        "task_successes": 4,
+        "completed_without_success": 76,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.05,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_mismatched": {
+        "planned": 80,
+        "reported": 80,
+        "pending": 0,
+        "completed": 80,
+        "task_successes": 1,
+        "completed_without_success": 79,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.0125,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_reversed": {
+        "planned": 80,
+        "reported": 80,
+        "pending": 0,
+        "completed": 80,
+        "task_successes": 2,
+        "completed_without_success": 78,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.025,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "oracle_text": {
+        "planned": 400,
+        "reported": 400,
+        "pending": 0,
+        "completed": 399,
+        "task_successes": 370,
+        "completed_without_success": 29,
+        "runtime_errors": 1,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.925,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "asr_text": {
+        "planned": 400,
+        "reported": 400,
+        "pending": 0,
+        "completed": 399,
+        "task_successes": 349,
+        "completed_without_success": 50,
+        "runtime_errors": 1,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.8725,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      }
+    },
+    "exclude_prior_states": {
+      "joint_native": {
+        "planned": 494,
+        "reported": 494,
+        "pending": 0,
+        "completed": 494,
+        "task_successes": 84,
+        "completed_without_success": 410,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.1700404858299595,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_matched": {
+        "planned": 99,
+        "reported": 99,
+        "pending": 0,
+        "completed": 98,
+        "task_successes": 16,
+        "completed_without_success": 82,
+        "runtime_errors": 1,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.16161616161616163,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_silence": {
+        "planned": 99,
+        "reported": 99,
+        "pending": 0,
+        "completed": 99,
+        "task_successes": 10,
+        "completed_without_success": 89,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.10101010101010101,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_mismatched": {
+        "planned": 99,
+        "reported": 99,
+        "pending": 0,
+        "completed": 99,
+        "task_successes": 5,
+        "completed_without_success": 94,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.050505050505050504,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "joint_reversed": {
+        "planned": 99,
+        "reported": 99,
+        "pending": 0,
+        "completed": 99,
+        "task_successes": 7,
+        "completed_without_success": 92,
+        "runtime_errors": 0,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.0707070707070707,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "oracle_text": {
+        "planned": 494,
+        "reported": 494,
+        "pending": 0,
+        "completed": 493,
+        "task_successes": 447,
+        "completed_without_success": 46,
+        "runtime_errors": 1,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.9048582995951417,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      },
+      "asr_text": {
+        "planned": 494,
+        "reported": 494,
+        "pending": 0,
+        "completed": 492,
+        "task_successes": 430,
+        "completed_without_success": 62,
+        "runtime_errors": 2,
+        "invalid_initial_states": 0,
+        "success_fraction_of_planned": 0.8704453441295547,
+        "interpretation": "smoke test on specified cases, not an official LIBERO benchmark score"
+      }
+    }
+  },
+  "paired_statistics": {
+    "joint_native_minus_asr_text__all": {
+      "planned_pairs": 500,
+      "valid_pairs": 497,
+      "task_clusters": 10,
+      "base_only_successes": 9,
+      "control_only_successes": 357,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_native_minus_asr_text__joint_seen": {
+      "planned_pairs": 100,
+      "valid_pairs": 98,
+      "task_clusters": 2,
+      "base_only_successes": 9,
+      "control_only_successes": 18,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_native_minus_asr_text__joint_unseen": {
+      "planned_pairs": 400,
+      "valid_pairs": 399,
+      "task_clusters": 8,
+      "base_only_successes": 0,
+      "control_only_successes": 339,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_native_minus_asr_text__exclude_prior_states": {
+      "planned_pairs": 494,
+      "valid_pairs": 491,
+      "task_clusters": 10,
+      "base_only_successes": 9,
+      "control_only_successes": 356,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "oracle_text_minus_asr_text__all": {
+      "planned_pairs": 500,
+      "valid_pairs": 497,
+      "task_clusters": 10,
+      "base_only_successes": 47,
+      "control_only_successes": 31,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "oracle_text_minus_asr_text__joint_seen": {
+      "planned_pairs": 100,
+      "valid_pairs": 99,
+      "task_clusters": 2,
+      "base_only_successes": 6,
+      "control_only_successes": 11,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "oracle_text_minus_asr_text__joint_unseen": {
+      "planned_pairs": 400,
+      "valid_pairs": 398,
+      "task_clusters": 8,
+      "base_only_successes": 41,
+      "control_only_successes": 20,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "oracle_text_minus_asr_text__exclude_prior_states": {
+      "planned_pairs": 494,
+      "valid_pairs": 491,
+      "task_clusters": 10,
+      "base_only_successes": 47,
+      "control_only_successes": 30,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_native_minus_oracle_text__all": {
+      "planned_pairs": 500,
+      "valid_pairs": 498,
+      "task_clusters": 10,
+      "base_only_successes": 12,
+      "control_only_successes": 375,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_native_minus_oracle_text__joint_seen": {
+      "planned_pairs": 100,
+      "valid_pairs": 99,
+      "task_clusters": 2,
+      "base_only_successes": 11,
+      "control_only_successes": 14,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_native_minus_oracle_text__joint_unseen": {
+      "planned_pairs": 400,
+      "valid_pairs": 399,
+      "task_clusters": 8,
+      "base_only_successes": 1,
+      "control_only_successes": 361,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_native_minus_oracle_text__exclude_prior_states": {
+      "planned_pairs": 494,
+      "valid_pairs": 492,
+      "task_clusters": 10,
+      "base_only_successes": 12,
+      "control_only_successes": 375,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_matched_minus_joint_silence__all": {
+      "planned_pairs": 100,
+      "valid_pairs": 98,
+      "task_clusters": 10,
+      "base_only_successes": 9,
+      "control_only_successes": 4,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_matched_minus_joint_silence__joint_seen": {
+      "planned_pairs": 20,
+      "valid_pairs": 19,
+      "task_clusters": 2,
+      "base_only_successes": 9,
+      "control_only_successes": 2,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_matched_minus_joint_silence__joint_unseen": {
+      "planned_pairs": 80,
+      "valid_pairs": 79,
+      "task_clusters": 8,
+      "base_only_successes": 0,
+      "control_only_successes": 2,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_matched_minus_joint_silence__exclude_prior_states": {
+      "planned_pairs": 99,
+      "valid_pairs": 97,
+      "task_clusters": 10,
+      "base_only_successes": 9,
+      "control_only_successes": 4,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_matched_minus_joint_mismatched__all": {
+      "planned_pairs": 100,
+      "valid_pairs": 99,
+      "task_clusters": 10,
+      "base_only_successes": 12,
+      "control_only_successes": 1,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_matched_minus_joint_mismatched__joint_seen": {
+      "planned_pairs": 20,
+      "valid_pairs": 20,
+      "task_clusters": 2,
+      "base_only_successes": 11,
+      "control_only_successes": 1,
+      "macro_difference_pp": 50.0,
+      "ci95_pp": [
+        20.0,
+        80.0
+      ],
+      "per_task_difference_pp": {
+        "0": 80.0,
+        "3": 20.0
+      },
+      "decision": "exploratory_cluster_interval_only",
+      "leave_one_task_out_pp": [
+        20.0,
+        80.0
+      ],
+      "interval_above_zero": true,
+      "interval_below_zero": false,
+      "interval_within_5pp": false,
+      "degenerate_task_differences": false
+    },
+    "joint_matched_minus_joint_mismatched__joint_unseen": {
+      "planned_pairs": 80,
+      "valid_pairs": 79,
+      "task_clusters": 8,
+      "base_only_successes": 1,
+      "control_only_successes": 0,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_matched_minus_joint_mismatched__exclude_prior_states": {
+      "planned_pairs": 99,
+      "valid_pairs": 98,
+      "task_clusters": 10,
+      "base_only_successes": 12,
+      "control_only_successes": 1,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_matched_minus_joint_reversed__all": {
+      "planned_pairs": 100,
+      "valid_pairs": 99,
+      "task_clusters": 10,
+      "base_only_successes": 11,
+      "control_only_successes": 2,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_matched_minus_joint_reversed__joint_seen": {
+      "planned_pairs": 20,
+      "valid_pairs": 20,
+      "task_clusters": 2,
+      "base_only_successes": 10,
+      "control_only_successes": 1,
+      "macro_difference_pp": 45.0,
+      "ci95_pp": [
+        40.0,
+        50.0
+      ],
+      "per_task_difference_pp": {
+        "0": 50.0,
+        "3": 40.0
+      },
+      "decision": "exploratory_cluster_interval_only",
+      "leave_one_task_out_pp": [
+        40.0,
+        50.0
+      ],
+      "interval_above_zero": true,
+      "interval_below_zero": false,
+      "interval_within_5pp": false,
+      "degenerate_task_differences": false
+    },
+    "joint_matched_minus_joint_reversed__joint_unseen": {
+      "planned_pairs": 80,
+      "valid_pairs": 79,
+      "task_clusters": 8,
+      "base_only_successes": 1,
+      "control_only_successes": 1,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_matched_minus_joint_reversed__exclude_prior_states": {
+      "planned_pairs": 99,
+      "valid_pairs": 98,
+      "task_clusters": 10,
+      "base_only_successes": 11,
+      "control_only_successes": 2,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_native_minus_joint_matched__all": {
+      "planned_pairs": 100,
+      "valid_pairs": 98,
+      "task_clusters": 10,
+      "base_only_successes": 2,
+      "control_only_successes": 1,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_native_minus_joint_matched__joint_seen": {
+      "planned_pairs": 20,
+      "valid_pairs": 19,
+      "task_clusters": 2,
+      "base_only_successes": 0,
+      "control_only_successes": 0,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_native_minus_joint_matched__joint_unseen": {
+      "planned_pairs": 80,
+      "valid_pairs": 79,
+      "task_clusters": 8,
+      "base_only_successes": 2,
+      "control_only_successes": 1,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    },
+    "joint_native_minus_joint_matched__exclude_prior_states": {
+      "planned_pairs": 99,
+      "valid_pairs": 97,
+      "task_clusters": 10,
+      "base_only_successes": 2,
+      "control_only_successes": 1,
+      "macro_difference_pp": null,
+      "ci95_pp": null,
+      "per_task_difference_pp": {},
+      "decision": "insufficient_or_incomplete_evidence"
+    }
+  },
+  "asr": {
+    "unique_utterances": 10,
+    "reference_words": 72,
+    "edit_errors": 0,
+    "micro_wer": 0.0,
+    "normalized_exact_match_rate": 1.0,
+    "semantic_reviewed": 0,
+    "semantic_correct": 0,
+    "critical_semantic_accuracy": null,
+    "rows": {
+      "t000_native": {
+        "reference_words": 7,
+        "edit_errors": 0,
+        "wer": 0.0,
+        "normalized_exact_match": true
+      },
+      "t001_native": {
+        "reference_words": 6,
+        "edit_errors": 0,
+        "wer": 0.0,
+        "normalized_exact_match": true
+      },
+      "t002_native": {
+        "reference_words": 9,
+        "edit_errors": 0,
+        "wer": 0.0,
+        "normalized_exact_match": true
+      },
+      "t003_native": {
+        "reference_words": 9,
+        "edit_errors": 0,
+        "wer": 0.0,
+        "normalized_exact_match": true
+      },
+      "t004_native": {
+        "reference_words": 8,
+        "edit_errors": 0,
+        "wer": 0.0,
+        "normalized_exact_match": true
+      },
+      "t005_native": {
+        "reference_words": 9,
+        "edit_errors": 0,
+        "wer": 0.0,
+        "normalized_exact_match": true
+      },
+      "t006_native": {
+        "reference_words": 7,
+        "edit_errors": 0,
+        "wer": 0.0,
+        "normalized_exact_match": true
+      },
+      "t007_native": {
+        "reference_words": 4,
+        "edit_errors": 0,
+        "wer": 0.0,
+        "normalized_exact_match": true
+      },
+      "t008_native": {
+        "reference_words": 6,
+        "edit_errors": 0,
+        "wer": 0.0,
+        "normalized_exact_match": true
+      },
+      "t009_native": {
+        "reference_words": 7,
+        "edit_errors": 0,
+        "wer": 0.0,
+        "normalized_exact_match": true
+      }
+    },
+    "note": "WER is word-level; semantic accuracy requires completed human review"
+  },
+  "cases": {
+    "drawer": {
+      "report": {
+        "kind": "closed_loop_smoke_not_benchmark",
+        "task": "open the middle drawer of the cabinet",
+        "training_step": 300,
+        "checkpoint": "expanded300/checkpoint.pt",
+        "policy": "joint",
+        "instruction_modality": "waveform",
+        "init_index": 0,
+        "seed": 42,
+        "fast_decode_policy": "upstream",
+        "initial_instruction_only": true,
+        "success": true,
+        "suite": "libero_goal",
+        "task_index": 0,
+        "control_hz": 20.0,
+        "initial_simulation_seconds": 0.5000000000000003,
+        "status": "completed",
+        "action_chunks": 13
+      },
+      "source_report_sha256": "e60437b7526e059df6bea6dfbae08e40d869703e6fee0717a7ee848ffdab9e7a",
+      "gif_sha256": "685133296eedba43b6f3c9339aa677bf1ccb972065a65b8559c742bc3b595d6d"
+    },
+    "bowl": {
+      "report": {
+        "kind": "closed_loop_smoke_not_benchmark",
+        "task": "open the top drawer and put the bowl inside",
+        "training_step": 300,
+        "checkpoint": "expanded300/checkpoint.pt",
+        "policy": "joint",
+        "instruction_modality": "waveform",
+        "init_index": 0,
+        "seed": 42,
+        "fast_decode_policy": "upstream",
+        "initial_instruction_only": true,
+        "success": true,
+        "suite": "libero_goal",
+        "task_index": 3,
+        "control_hz": 20.0,
+        "initial_simulation_seconds": 0.5000000000000003,
+        "status": "completed",
+        "action_chunks": 16
+      },
+      "source_report_sha256": "74b8a452eb45603cdd09b5580e4a8ee5dca8cbb2e5cb6e9649f6b8f36693c7cc",
+      "gif_sha256": "a41ccbc3b23da6358a34e5ce44f48f4820c15898b794303a8f973bd157dc1dbb"
+    }
+  },
+  "training": {
+    "train_windows": 144,
+    "validation_windows": 43,
+    "learning_rate": 5e-05,
+    "accumulation": 2,
+    "target_step": 300,
+    "speech_input": "raw waveform in independently encoded <=1s chunks; no transcript conditioning",
+    "visual_input": "official Emu3 visual tokens, both cameras",
+    "objectives": [
+      "FAST action cross entropy"
+    ],
+    "train_metadata_sha256": "c7551f8bcfc8c4bf55e9de7596b36c1626b1556be832c9d8647aef90990cb1ed",
+    "validation_metadata_sha256": "db6b8dcfa0c565353bf5706a9fad6f0c41bf86cf7e895362adb9bd89b5fc7116"
+  }
+}
